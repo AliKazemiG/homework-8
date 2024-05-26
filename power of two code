@@ -1,0 +1,27 @@
+using System;
+
+
+class Program
+{
+  
+   public static int power(int n)
+    {
+        if (n == 0)
+        {
+            return 1;
+        }
+        else
+        {
+           return 2 * power(n - 1);
+        }
+  public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter a number");
+        int n = int.Parse(Console.ReadLine());
+        Console.WriteLine("the number 2 times the entered number equals to: " + power(n));
+        Console.WriteLine("Press any key to continue...");
+        Console.ReadKey();
+    }
+   
+    }
+}
